@@ -1,96 +1,109 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-    font-weight: bold;
-  }
-  
-  body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .container {
-    border-radius: 10px;
-    width: 50%;
-    background-color: #f1f5f8;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  #time {
-    background-color: yellow;
-    padding: 20px;
-    font-size: 100px;
-    font-weight: bold;
+  font-weight: bold;
+}
 
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border-radius: 10px;
+  width: 50%;
+  background-color: #f1f5f8;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#text {
+  font-size: 30px;
+}
+
+#time {
+  background-color: yellow;
+  padding: 20px;
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+}
+
+.blink {
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  40% {
+    opacity: 0;
   }
-  
-  .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20%;
-    font-size: 40px;
-  }
-  
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+  font-size: 40px;
+}
+
 #start {
-    border: 2px solid black;
-    border-radius: 15px;
-    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.25);
-    background-color: green;
-    color: white;
-    padding: 10px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-  
-  #start:hover {
-    transform: scale(1.1);
-    background-color: black;
-    color: green;
-    cursor: pointer;
-  }
-  
-  #stop {
-    border: 2px solid black;
-    border-radius: 15px;
-    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.25);
-    background-color: red;
-    color: white;
-    padding: 10px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-  
-  #stop:hover {
-    transform: scale(1.1);
-    background-color: black;
-    color: red;
-    cursor: pointer;
-  }
-  
-  #reset {
-    border: 2px solid black;
-    border-radius: 15px;
-    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.25);
-    background-color: blue;
-    color: white;
-    padding: 10px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-  
-  #reset:hover {
-    transform: scale(1.1);
-    background-color: black;
-    color: blue;
-    cursor: pointer;
-  }
-  
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.25);
+  background-color: green;
+  color: white;
+  padding: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#start:hover {
+  transform: scale(1.1);
+  background-color: black;
+  color: green;
+  cursor: pointer;
+}
+
+#stop {
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.25);
+  background-color: red;
+  color: white;
+  padding: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#stop:hover {
+  transform: scale(1.1);
+  background-color: black;
+  color: red;
+  cursor: pointer;
+}
+
+#reset {
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.25);
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#reset:hover {
+  transform: scale(1.1);
+  background-color: black;
+  color: blue;
+  cursor: pointer;
+}
