@@ -14,7 +14,7 @@ time.addEventListener(`click`, function () {
 
 function startingTimer() {
   time.classList.remove("blink");
-  text.textContent = `Remaining Time:`;
+  text.textContent = `Remaining Seconds:`;
   text.style.color = `green`;
   const inputTime = parseInt(time.textContent.trim());
   if (isNaN(inputTime) || inputTime <= 0) {
